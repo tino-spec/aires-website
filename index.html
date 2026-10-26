@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bar Restaurante Aires · Burgau</title>
+  <meta name="description" content="Family-run South African & Portuguese bar and restaurant in Burgau, Algarve. Ribs, grilled chicken, bobotie, fish & chips and malva pudding. Open Monday to Saturday, 16:00–23:00.">
+  <meta name="theme-color" content="#1E3A9E">
+  <!-- PREVIEW ONLY: remove this line at launch so Google can list the site -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Bar Restaurante Aires · Burgau">
+  <meta property="og:description" content="South African soul, Portuguese heart. Ribs, grilled chicken, bobotie and proper fish & chips in Burgau.">
+  <meta property="og:image" content="img/storefront.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231E3A9E'/%3E%3Crect x='6' y='6' width='52' height='52' rx='8' fill='none' stroke='%23C8322B' stroke-width='3'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='34' fill='%23fff'%3EA%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bar Restaurante Aires",
+    "alternateName": "Burgau Meu Irmão",
+    "foundingDate": "2021-08",
+    "servesCuisine": ["South African", "Portuguese"],
+    "telephone": "+351 912 247 212",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Largo do Poço 5A",
+      "addressLocality": "Burgau",
+      "addressRegion": "Faro",
+      "addressCountry": "PT"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "16:00",
+      "closes": "23:00"
+    }],
+    "hasMenu": "#menu",
+    "acceptsReservations": "True",
+    "image": "img/storefront.jpg"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Flag symbols, reused across the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flag-za" viewBox="0 0 90 60">
+      <rect width="90" height="60" fill="#E03C31"/>
+      <rect y="30" width="90" height="30" fill="#001489"/>
+      <path d="M0 0 L45 30 L0 60 Z" fill="#fff"/>
+      <path d="M0 0 H22 L52 20 H90 V40 H52 L22 60 H0 Z" fill="#fff"/>
+      <path d="M0 6 L36 30 L0 54 Z" fill="#FFB81C"/>
+      <path d="M0 0 H14 L46 24 H90 V36 H46 L14 60 H0 Z" fill="#007749"/>
+      <path d="M0 12 L27 30 L0 48 Z" fill="#000"/>
+    </symbol>
+    <symbol id="flag-pt" viewBox="0 0 90 60">
+      <rect width="90" height="60" fill="#DA291C"/>
+      <rect width="36" height="60" fill="#046A38"/>
+      <circle cx="36" cy="30" r="13" fill="#FFE900"/>
+      <circle cx="36" cy="30" r="9" fill="#DA291C"/>
+      <rect x="31.5" y="24" width="9" height="11" rx="2" fill="#fff"/>
+    </symbol>
+  </svg>
+
+  <div class="flagstripe" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Bar Restaurante Aires, back to top">
+        <span class="logo-word">AIRES</span>
+        <span class="logo-sub">Bar · Restaurante</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#favourites" data-i18n="nav.favourites">Favourites</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#story" data-i18n="nav.story">Our story</a>
+        <a href="#visit" data-i18n="nav.visit">Find us</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <a class="btn btn-red btn-sm" href="#book" data-i18n="cta.book">Book a table</a>
+      </div>
+    </div>
+  </header>
+  <div class="eave" aria-hidden="true"></div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <svg class="flag" aria-hidden="true"><use href="#flag-za"/></svg>
+            <span data-i18n="hero.eyebrow">Bar · Restaurante · Burgau</span>
+            <svg class="flag" aria-hidden="true"><use href="#flag-pt"/></svg>
+          </p>
+          <h1 data-i18n="hero.title">South African soul,<br><em>Portuguese heart.</em></h1>
+          <p class="lede" data-i18n="hero.lede">A family bar &amp; restaurant in the old fishing village of Burgau. Sticky ribs, flame-grilled chicken, bobotie, proper fish &amp; chips, and a warm welcome every time.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-blue" href="#menu" data-i18n="cta.menu">See the menu</a>
+            <a class="btn btn-ghost" href="#book" data-i18n="cta.book">Book a table</a>
+          </div>
+          <p class="status-chip">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="status-text" data-status>Mon–Sat · 16:00–23:00</span>
+          </p>
+        </div>
+        <figure class="hero-photo">
+          <div class="arch">
+            <img src="img/storefront.jpg" width="1000" height="1333" alt="The blue-and-white front of Bar Restaurante Aires in Burgau, with South African and Portuguese flags on the sign">
+          </div>
+          <figcaption class="hand" data-i18n="hero.note">Look for the blue &amp; white house!</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="tiles" aria-hidden="true"></div>
+
+    <!-- FAVOURITES -->
+    <section id="favourites" class="section favourites">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="fav.eyebrow">Before you look at the menu</p>
+          <h2 data-i18n="fav.title">Meet the favourites</h2>
+          <p class="section-sub" data-i18n="fav.sub">The plates our regulars come back for. Every one cooked to order.</p>
+        </header>
+
+        <div class="dish-grid">
+          <article class="dish dish-feature">
+            <img src="img/combo.jpg" alt="Glazed spare ribs and grilled chicken with yellow rice and fries" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.combo.tag">our pride &amp; joy</p>
+              <h3><span data-i18n="dish.combo.name">Aires House Combo</span> <span class="price" data-price="21.5">€21.50</span></h3>
+              <p data-i18n="dish.combo.desc">Half a rack of sticky glazed spare ribs and half a grilled chicken, with two sides of your choice.</p>
+            </div>
+          </article>
+
+          <article class="dish">
+            <img src="img/ribs.jpg" alt="A rack of glazed spare ribs with fries" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.ribs.tag">messy fingers guaranteed</p>
+              <h3><span data-i18n="dish.ribs.name">Spare Ribs</span> <span class="price" data-price="15.5" data-prefix="from">from €15.50</span></h3>
+              <p data-i18n="dish.ribs.desc">Basted and grilled until sticky. Half or full rack, with two sides.</p>
+            </div>
+          </article>
+
+          <article class="dish">
+            <img src="img/chicken.jpg" alt="Basted grilled chicken with a side salad" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.chicken.tag">off the grill</p>
+              <h3><span data-i18n="dish.chicken.name">Grilled Chicken</span> <span class="price" data-price="13" data-prefix="from">from €13.00</span></h3>
+              <p data-i18n="dish.chicken.desc">Half or whole, grilled golden, with two sides.</p>
+            </div>
+          </article>
+
+          <article class="dish">
+            <img src="img/bobotie.jpg" alt="Bobotie with a golden egg topping and spring onions, with a South African flag pick" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.bobotie.tag">a taste of home</p>
+              <h3><span>Bobotie</span> <span class="price" data-price="15">€15.00</span></h3>
+              <p data-i18n="dish.bobotie.desc">South Africa’s classic spiced mince bake under a golden egg custard. Also made with chickpeas.</p>
+            </div>
+          </article>
+
+          <article class="dish">
+            <img src="img/fish-chips.jpg" alt="Battered fish and chips with mushy peas and a South African flag pick" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.fish.tag">Friday feeling, every day</p>
+              <h3><span>Fish &amp; Chips</span> <span class="price" data-price="15">€15.00</span></h3>
+              <p data-i18n="dish.fish.desc">Crispy battered fish with proper chips, just like back home.</p>
+            </div>
+          </article>
+
+          <article class="dish">
+            <img src="img/malva.jpg" alt="A slice of malva pudding with a strawberry and a scoop of vanilla ice cream" loading="lazy">
+            <div class="dish-body">
+              <p class="hand dish-tag" data-i18n="dish.malva.tag">save room!</p>
+              <h3><span data-i18n="dish.malva.name">Malva Pudding</span> <span class="price" data-price="6.9">€6.90</span></h3>
+              <p data-i18n="dish.malva.desc">Warm, syrupy apricot sponge pudding. South Africa’s favourite way to finish a meal.</p>
+            </div>
+          </article>
+        </div>
+        <p class="swipe-hint hand" aria-hidden="true" data-i18n="fav.swipe">swipe for more →</p>
+
+        <div class="center">
+          <a class="btn btn-blue" href="#menu" data-i18n="cta.fullmenu">See the full menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section menu-section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="menu.eyebrow">Food &amp; drinks</p>
+          <h2 data-i18n="menu.title">The menu</h2>
+        </header>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu">
+          <button type="button" role="tab" id="tab-food" aria-controls="panel-food" aria-selected="true" data-tab="food" data-i18n="menu.food">Food</button>
+          <button type="button" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" data-tab="drinks" data-i18n="menu.drinks">Drinks</button>
+        </div>
+
+        <div class="menu-paper">
+          <nav class="menu-chips" aria-label="Menu sections" data-chips></nav>
+          <div id="panel-food" role="tabpanel" aria-labelledby="tab-food" class="menu-cols" data-panel="food"></div>
+          <div id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" class="menu-cols" data-panel="drinks" hidden></div>
+          <noscript><p>Please enable JavaScript to view the menu, or call us on +351 912 247 212.</p></noscript>
+        </div>
+
+        <ul class="menu-notes">
+          <li data-i18n="menu.note.cooked">Everything is cooked to order. We don’t do fast food, so please allow at least 35 minutes.</li>
+          <li data-i18n="menu.note.kitchen">Kitchen closes at 22:00 · Takeaway 16:00–22:00</li>
+          <li data-i18n="menu.note.couvert">Couvert and starters are only charged if you ask for them.</li>
+          <li data-i18n="menu.note.vat">All prices in euros and include IVA (VAT).</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="tiles" aria-hidden="true"></div>
+
+    <!-- STORY -->
+    <section id="story" class="section story">
+      <div class="wrap story-grid">
+        <div class="story-media">
+          <figure class="story-photo">
+            <img src="img/aires-darlene.jpg" width="900" height="1200" alt="Aires and Darlene outside Bar Restaurante Aires on a sunny day in Burgau" loading="lazy">
+            <figcaption class="hand">Aires &amp; Darlene</figcaption>
+          </figure>
+          <figure class="story-video">
+            <video src="img/chickpea-salad.mp4" poster="img/chickpea-salad.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Our zesty chickpea salad being served"></video>
+          </figure>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow" data-i18n="story.eyebrow">Our story</p>
+          <h2 data-i18n="story.title">From Cape Town<br>to Burgau.</h2>
+          <p data-i18n="story.p1">The head of our family, Aires Tolontino Ferreira, emigrated to beautiful Cape Town in the late 1940s. We named our restaurant in his honour. Some of you know us as “Burgau Meu Irmão”.</p>
+          <p data-i18n="story.p2">We are Aires Justino, a Portuguese national born and raised in Cape Town, and Darlene, born in Zimbabwe. In 2021 we came back to Portugal for a better, safer life and to be closer to our children in the UK. After three months in Aveiro, a road trip to the Algarve brought us to Burgau by pure chance. We had stumbled on our new home, and in August 2021 Bar Restaurante Aires was born.</p>
+          <p data-i18n="story.p3">Our family has a lifelong history in the fish industry, but here we cook our favourite braai food on the grill. Our promise: the finest quality food, with the warmest South African love.</p>
+          <div class="woodstock">
+            <p class="woodstock-title" data-i18n="story.woodstock">Proudly from Woodstock</p>
+            <p class="hand">Good stock comes from Woodstock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book" class="section book">
+      <div class="wrap book-grid">
+        <div class="book-intro">
+          <p class="eyebrow eyebrow-light" data-i18n="book.eyebrow">Reservations</p>
+          <h2 data-i18n="book.title">Book a table</h2>
+          <p data-i18n="book.lede">Pick a day and time and send us your request on WhatsApp. We’ll confirm as soon as we can.</p>
+          <ul class="book-facts">
+            <li data-i18n="book.fact.hours">Monday to Saturday, 16:00–23:00</li>
+            <li data-i18n="book.fact.groups">Groups of 13 or more: please call us</li>
+            <li data-i18n="book.fact.walkin">Walk-ins always welcome when there’s space</li>
+          </ul>
+          <p class="book-call"><span data-i18n="book.call">Prefer to talk?</span> <a href="tel:+351912247212" data-phone-link>+351 912 247 212</a></p>
+          <p class="book-soon" data-i18n="book.soon">Online booking with instant confirmation is coming soon.</p>
+        </div>
+
+        <form class="book-form" novalidate data-booking>
+          <div class="field field-full">
+            <label for="b-name" data-i18n="form.name">Your name</label>
+            <input id="b-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="b-date" data-i18n="form.date">Date</label>
+            <input id="b-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="b-time" data-i18n="form.time">Time</label>
+            <select id="b-time" name="time" required></select>
+          </div>
+          <div class="field">
+            <label for="b-guests" data-i18n="form.guests">Guests</label>
+            <select id="b-guests" name="guests" required></select>
+          </div>
+          <div class="field">
+            <label for="b-phone" data-i18n="form.phone">Phone</label>
+            <input id="b-phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field field-full">
+            <label for="b-notes"><span data-i18n="form.notes">Anything we should know?</span> <span class="optional" data-i18n="form.optional">(optional)</span></label>
+            <textarea id="b-notes" name="notes" rows="2" data-i18n-placeholder="form.notes.ph" placeholder="Birthday, high chair, allergies…"></textarea>
+          </div>
+          <p class="form-error" role="alert" data-form-error hidden></p>
+          <button class="btn btn-whatsapp field-full" type="submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+            <span data-i18n="form.submit">Send booking request</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section visit">
+      <div class="wrap visit-grid">
+        <div class="visit-copy">
+          <p class="eyebrow" data-i18n="visit.eyebrow">Find us</p>
+          <h2 data-i18n="visit.title">Come and find us</h2>
+          <address>
+            <strong>Bar Restaurante Aires</strong><br>
+            <span data-address>Largo do Poço 5A, Burgau</span><br>
+            Vila do Bispo, Algarve, Portugal
+          </address>
+          <table class="hours">
+            <caption class="sr-only" data-i18n="visit.hours">Opening hours</caption>
+            <tbody data-hours></tbody>
+          </table>
+          <p class="hours-note" data-i18n="visit.kitchen">Kitchen closes at 22:00</p>
+          <div class="visit-ctas">
+            <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=Bar+Restaurante+Aires+Burgau" target="_blank" rel="noopener" data-i18n="visit.directions">Get directions</a>
+            <a class="btn btn-ghost" href="tel:+351912247212" data-phone-link data-i18n="visit.call">Call us</a>
+          </div>
+        </div>
+        <div class="map" data-map>
+          <div class="map-placeholder">
+            <p class="hand" data-i18n="visit.mapnote">right in the old village</p>
+            <button type="button" class="btn btn-light" data-map-load data-i18n="visit.showmap">Show map</button>
+            <p class="map-small" data-i18n="visit.mapprivacy">Loads Google Maps</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="tiles tiles-footer" aria-hidden="true"></div>
+    <div class="wrap footer-inner">
+      <div>
+        <p class="logo logo-light"><span class="logo-word">AIRES</span><span class="logo-sub">Bar · Restaurante</span></p>
+        <p class="footer-flags">
+          <svg class="flag" aria-hidden="true"><use href="#flag-za"/></svg>
+          <svg class="flag" aria-hidden="true"><use href="#flag-pt"/></svg>
+          <span>Burgau, Algarve</span>
+        </p>
+      </div>
+      <p class="footer-small">© <span data-year>2026</span> Bar Restaurante Aires · <span data-i18n="footer.made">Made with love in Burgau</span></p>
+    </div>
+  </footer>
+
+  <nav class="action-bar" aria-label="Quick actions">
+    <a href="#menu" data-i18n="bar.menu">Menu</a>
+    <a href="#book" class="action-primary" data-i18n="bar.book">Book</a>
+    <a href="tel:+351912247212" data-phone-link data-i18n="bar.call">Call</a>
+  </nav>
+
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
