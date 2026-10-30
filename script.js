@@ -6,11 +6,7 @@ const CONFIG = {
   whatsapp: '351912247212',          // international format, digits only
   timeZone: 'Europe/Lisbon',
   // 0 = Sunday … 6 = Saturday. null = closed.
-  hours: [null, ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00']],
-  // Table bookings: first and last seating, every 30 minutes (kitchen closes 22:00)
-  firstSeating: '16:00',
-  lastSeating: '21:30',
-  maxGuests: 12
+  hours: [null, ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00'], ['16:00', '23:00']]
 };
 
 const I18N = {
@@ -47,20 +43,12 @@ const I18N = {
     'story.p3': 'Our family has a lifelong history in the fish industry, but here we cook our favourite braai food on the grill. Our promise: the finest quality food, with the warmest South African love.',
     'story.woodstock': 'Proudly from Woodstock',
     'book.eyebrow': 'Reservations', 'book.title': 'Book a table',
-    'book.lede': 'Pick a day and time and send us your request on WhatsApp. We’ll confirm as soon as we can.',
-    'book.fact.hours': 'Monday to Saturday, 16:00–23:00', 'book.fact.groups': 'Groups of 13 or more: please call us',
-    'book.fact.walkin': 'Walk-ins always welcome when there’s space', 'book.call': 'Prefer to talk?',
-    'book.soon': 'Online booking with instant confirmation is coming soon.',
-    'form.name': 'Your name', 'form.date': 'Date', 'form.time': 'Time', 'form.guests': 'Guests', 'form.phone': 'Phone',
-    'form.notes': 'Anything we should know?', 'form.optional': '(optional)', 'form.notes.ph': 'Birthday, high chair, allergies…',
-    'form.submit': 'Send booking request', 'form.guest': 'guest', 'form.guestsN': 'guests',
-    'form.err.required': 'Please fill in your name, date, time, number of guests and phone.',
-    'form.err.sunday': 'We’re closed on Sundays. Please pick another day.',
-    'form.err.past': 'That date has passed. Please pick another day.',
-    'form.err.notimes': 'No more booking times today. Please pick another day.',
-    'form.choose': 'Choose…',
-    'wa.intro': 'Hi Aires! I’d like to book a table.', 'wa.name': 'Name', 'wa.date': 'Date', 'wa.time': 'Time',
-    'wa.guests': 'Guests', 'wa.phone': 'Phone', 'wa.notes': 'Notes',
+    'book.lede': 'To book a table, give us a call or send us a WhatsApp message. We’ll get back to you as soon as we can.',
+    'book.fact.hours': 'Monday to Saturday, 16:00–23:00',
+    'book.fact.walkin': 'Walk-ins always welcome when there’s space',
+    'book.soon': 'Online booking is coming soon.',
+    'book.card.label': 'Call or WhatsApp', 'book.callbtn': 'Call us', 'book.wabtn': 'WhatsApp us',
+    'book.card.tip': 'Tell us your name, the day, the time and how many people.',
     'visit.eyebrow': 'Find us', 'visit.title': 'Come and find us', 'visit.hours': 'Opening hours',
     'visit.kitchen': 'Kitchen closes at 22:00', 'visit.directions': 'Get directions', 'visit.call': 'Call us',
     'visit.mapnote': 'right in the old village', 'visit.showmap': 'Show map', 'visit.mapprivacy': 'Loads Google Maps',
@@ -105,20 +93,12 @@ const I18N = {
     'story.p3': 'A nossa família tem uma longa história na indústria do peixe, mas aqui grelhamos a nossa comida de braai preferida. A nossa promessa: comida da melhor qualidade, com o mais caloroso amor sul-africano.',
     'story.woodstock': 'Orgulhosamente de Woodstock',
     'book.eyebrow': 'Reservas', 'book.title': 'Reservar mesa',
-    'book.lede': 'Escolha o dia e a hora e envie-nos o pedido por WhatsApp. Confirmamos assim que possível.',
-    'book.fact.hours': 'Segunda a sábado, 16:00–23:00', 'book.fact.groups': 'Grupos de 13 ou mais: ligue-nos, por favor',
-    'book.fact.walkin': 'Sem reserva? Se houver lugar, é sempre bem-vindo', 'book.call': 'Prefere ligar?',
-    'book.soon': 'Em breve: reservas online com confirmação imediata.',
-    'form.name': 'Nome', 'form.date': 'Data', 'form.time': 'Hora', 'form.guests': 'Pessoas', 'form.phone': 'Telefone',
-    'form.notes': 'Algo que devamos saber?', 'form.optional': '(opcional)', 'form.notes.ph': 'Aniversário, cadeira de bebé, alergias…',
-    'form.submit': 'Pedir reserva', 'form.guest': 'pessoa', 'form.guestsN': 'pessoas',
-    'form.err.required': 'Preencha o nome, a data, a hora, o número de pessoas e o telefone.',
-    'form.err.sunday': 'Ao domingo estamos fechados. Escolha outro dia, por favor.',
-    'form.err.past': 'Essa data já passou. Escolha outro dia, por favor.',
-    'form.err.notimes': 'Já não há horários disponíveis hoje. Escolha outro dia, por favor.',
-    'form.choose': 'Escolher…',
-    'wa.intro': 'Olá Aires! Gostaria de reservar uma mesa.', 'wa.name': 'Nome', 'wa.date': 'Data', 'wa.time': 'Hora',
-    'wa.guests': 'Pessoas', 'wa.phone': 'Telefone', 'wa.notes': 'Notas',
+    'book.lede': 'Para reservar mesa, ligue-nos ou envie-nos uma mensagem por WhatsApp. Respondemos assim que possível.',
+    'book.fact.hours': 'Segunda a sábado, 16:00–23:00',
+    'book.fact.walkin': 'Sem reserva? Se houver lugar, é sempre bem-vindo',
+    'book.soon': 'Em breve: reservas online.',
+    'book.card.label': 'Ligue ou envie WhatsApp', 'book.callbtn': 'Ligar', 'book.wabtn': 'WhatsApp',
+    'book.card.tip': 'Diga-nos o seu nome, o dia, a hora e quantas pessoas.',
     'visit.eyebrow': 'Onde estamos', 'visit.title': 'Venha visitar-nos', 'visit.hours': 'Horário',
     'visit.kitchen': 'A cozinha fecha às 22:00', 'visit.directions': 'Como chegar', 'visit.call': 'Ligar',
     'visit.mapnote': 'no coração da aldeia', 'visit.showmap': 'Mostrar mapa', 'visit.mapprivacy': 'Carrega o Google Maps',
@@ -139,7 +119,6 @@ const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 const t = (key) => I18N[lang][key] ?? I18N.en[key] ?? key;
 const toMin = (hhmm) => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
-const fromMin = (min) => `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
 const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function formatPrice(n) {
@@ -162,7 +141,6 @@ function applyLanguage(next) {
   lang = next;
   document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
   $$('[data-i18n]').forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
-  $$('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
   $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
   $$('[data-price]').forEach((el) => {
     const p = formatPrice(+el.dataset.price);
@@ -171,8 +149,6 @@ function applyLanguage(next) {
   renderMenu();
   renderHours();
   renderStatus();
-  buildGuestOptions();
-  buildTimeOptions();
   try { localStorage.setItem('aires-lang', lang); } catch (e) { /* storage unavailable */ }
 }
 
@@ -256,91 +232,6 @@ function renderStatus() {
   }
 }
 
-/* ---------- Booking (WhatsApp for now; swap for the real system later) ---------- */
-const form = $('[data-booking]');
-const dateInput = $('#b-date');
-const timeSelect = $('#b-time');
-const guestSelect = $('#b-guests');
-const errorBox = $('[data-form-error]');
-
-function dateFromIso(iso) {
-  const [y, m, d] = iso.split('-').map(Number);
-  return new Date(Date.UTC(y, m - 1, d, 12));
-}
-
-function buildGuestOptions() {
-  const current = guestSelect.value;
-  guestSelect.innerHTML = Array.from({ length: CONFIG.maxGuests }, (_, i) => {
-    const n = i + 1;
-    return `<option value="${n}">${n} ${n === 1 ? t('form.guest') : t('form.guestsN')}</option>`;
-  }).join('');
-  guestSelect.value = current || '2';
-}
-
-function buildTimeOptions() {
-  const current = timeSelect.value;
-  const now = nowInLisbon();
-  let start = toMin(CONFIG.firstSeating);
-  if (dateInput.value === now.iso) start = Math.max(start, Math.ceil((now.minutes + 60) / 30) * 30);
-  const slots = [];
-  for (let m = start; m <= toMin(CONFIG.lastSeating); m += 30) slots.push(fromMin(m));
-  timeSelect.innerHTML = `<option value="">${t('form.choose')}</option>` +
-    slots.map((s) => `<option value="${s}">${s}</option>`).join('');
-  if (slots.includes(current)) timeSelect.value = current;
-  return slots.length;
-}
-
-function showError(key) {
-  errorBox.textContent = key ? t(key) : '';
-  errorBox.hidden = !key;
-}
-
-function validateDate() {
-  const v = dateInput.value;
-  if (!v) return null;
-  if (v < nowInLisbon().iso) return 'form.err.past';
-  if (!CONFIG.hours[dateFromIso(v).getUTCDay()]) return 'form.err.sunday';
-  if (buildTimeOptions() === 0) return 'form.err.notimes';
-  return null;
-}
-
-function initBooking() {
-  dateInput.min = nowInLisbon().iso;
-  dateInput.addEventListener('change', () => {
-    const err = validateDate();
-    dateInput.setAttribute('aria-invalid', String(!!err));
-    showError(err);
-  });
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = Object.fromEntries(new FormData(form));
-    const dateErr = validateDate();
-    if (dateErr) { showError(dateErr); dateInput.focus(); return; }
-
-    const missing = ['name', 'date', 'time', 'guests', 'phone'].filter((k) => !String(data[k] || '').trim());
-    $$('input, select', form).forEach((el) => el.setAttribute('aria-invalid', String(missing.includes(el.name))));
-    if (missing.length) { showError('form.err.required'); form.elements[missing[0]].focus(); return; }
-    showError(null);
-
-    const prettyDate = new Intl.DateTimeFormat(t('locale'), {
-      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'
-    }).format(dateFromIso(data.date));
-
-    const lines = [
-      t('wa.intro'), '',
-      `${t('wa.name')}: ${data.name.trim()}`,
-      `${t('wa.date')}: ${prettyDate}`,
-      `${t('wa.time')}: ${data.time}`,
-      `${t('wa.guests')}: ${data.guests}`,
-      `${t('wa.phone')}: ${data.phone.trim()}`
-    ];
-    if (data.notes.trim()) lines.push(`${t('wa.notes')}: ${data.notes.trim()}`);
-
-    window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
-  });
-}
-
 /* ---------- Map (only loads Google when asked, for privacy) ---------- */
 function initMap() {
   $('[data-map-load]').addEventListener('click', () => {
@@ -355,6 +246,8 @@ function initMap() {
 
 /* ---------- Init ---------- */
 $$('[data-phone-link]').forEach((a) => { a.href = `tel:${CONFIG.phoneTel}`; });
+$$('[data-phone-text]').forEach((el) => { el.textContent = CONFIG.phoneDisplay; });
+$$('[data-whatsapp-link]').forEach((a) => { a.href = `https://wa.me/${CONFIG.whatsapp}`; });
 $$('.lang button').forEach((b) => b.addEventListener('click', () => applyLanguage(b.dataset.lang)));
 $$('.menu-tabs [role="tab"]').forEach((b) => {
   b.addEventListener('click', () => selectTab(b.dataset.tab));
@@ -367,7 +260,6 @@ $$('.menu-tabs [role="tab"]').forEach((b) => {
 });
 $('[data-year]').textContent = new Date().getFullYear();
 
-initBooking();
 initMap();
 applyLanguage(initialLanguage());
 setInterval(renderStatus, 60 * 1000);
